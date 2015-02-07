@@ -16,6 +16,7 @@ module Ubiquity
 
           argument_parser.on('--host-address HOSTADDRESS', 'The address of the server to communicate with.', "\tdefault: #{default_http_host_address}") { |v| arguments[:http_host_address] = v }
           argument_parser.on('--host-port HOSTPORT', 'The port to use when communicating with the server.', "\tdefault: #{default_http_host_port}") { |v| arguments[:http_host_port] = v }
+          argument_parser.on('--access-token ACCESSTOKEN', 'The access token to send to authenticate the request.') { |v| arguments[:access_token] = v }
 
           argument_parser.on('--method-name METHODNAME', 'The name of the method to call.') { |v| arguments[:method_name] = v }
           argument_parser.on('--method-arguments JSON', 'The arguments to pass when calling the method.') { |v| arguments[:method_arguments] = v }
