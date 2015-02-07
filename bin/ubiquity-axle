@@ -5,4 +5,6 @@ $:.unshift(lib_path) unless $:.include?(lib_path) or !File.exists?(lib_path)
 require 'rubygems'
 require 'ubiquity/axle/api/utilities/cli'
 
+ARGV << '-h' if ARGV.empty?
+
 cli.run
