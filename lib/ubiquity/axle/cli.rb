@@ -139,7 +139,6 @@ module Ubiquity
 
       def self.run(args = nil, init_options = { }, run_options = nil)
         args ||= parse_arguments
-        puts "Arguments: #{args.inspect}"
         run_options ||= init_options
         new(args, init_options).run(args, run_options)
       end
