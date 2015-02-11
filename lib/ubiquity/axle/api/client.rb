@@ -148,8 +148,8 @@ module Ubiquity
                 { :name => :file_system, :send_in => :path, :required => true },
                 { :name => :file_id, :send_in => :path, :required => true },
 
-                { :name => :include_comments, :send_in => :query },
-                { :name => :include_metadata, :send_in => :query },
+                { :name => :includeMetadata, :send_in => :query },
+                { :name => :includeComments, :send_in => :query },
               ]
             }.merge(options)
           )
@@ -166,8 +166,8 @@ module Ubiquity
                 { :name => :file_system, :send_in => :path, :required => true },
                 { :name => :file_id, :send_in => :path, :required => true },
 
-                { :name => :include_comments, :send_in => :query },
-                { :name => :include_metadata, :send_in => :query },
+                { :name => :includeComments, :send_in => :query },
+                { :name => :includeComments, :send_in => :query },
                 { :name => :page, :send_in => :query }
               ]
             }.merge(options)
